@@ -1,0 +1,25 @@
+info:
+  app:
+    name: trade-order-gateway-liubingxin
+    env: prod
+    ver: v0.0.1
+
+server:
+  port: 8088
+
+spring:
+  datasource:
+    url: jdbc:mysql://campus.mysql.ksyun.com:3306/test_trade?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    maximum-pool-size: 3
+    minimum-idle: 2
+    username: test
+    password: test123
+  redis:
+    host: campus.redis.ksyun.com
+    port: 6379
+    password: TkSbRi%xQtFkEX98BQR3yQ==
+    db: 3
+
+actions: http://campus.query1.ksyun.com:8089,http://campus.query2.ksyun.com:8089
+meta: http://campus.meta.ksyun.com:8090
